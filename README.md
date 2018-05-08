@@ -1,9 +1,13 @@
 # Text
 
+## Introduction
+ For a strict 80 char width person, whenver I need to set text message for error, exception or others I have often experienced that it is really hard to put it in within width limit. I am not a believer in string concanation either. So here comes a simple solution I came up with recently.
 
-## example
+## Example
 
-```echo Text::start()
+### Code
+```
+echo Text::start()
     ->It
     ->is
     ->a
@@ -30,4 +34,13 @@
     ->fullstop(3)
     ->rightparenthesis()
     ,
-    "\n";```
+    "\n";
+```
+
+### Output
+```
+It is a wonderful text.. more text & text in raw,???
+  (
+... am I dreaming
+ or something...)
+```
